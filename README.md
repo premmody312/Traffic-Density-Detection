@@ -12,7 +12,7 @@ the real time traffic situation is.
 
 *Python
 *OpenCV
-## Screenclip
+## SCREENCLIP:
 
 ![alt text](https://github.com/premmody312/Traffic-Density-Detection/blob/master/outputs/output.gif)
 
@@ -21,7 +21,8 @@ the real time traffic situation is.
 
 ### OBJECT DETECTION:
     In order to count vehicles we first need to be able to detect them in an image. This is pretty simple for a human to pick out but harder to implement in the machine world. However, if we consider that an image is just an array of numbers (one value per pixel), we may be able to use this to determine what a vehicle looks like and what we'd expect to see when there isn't a vehicle there. For this we convert the image from RGB to HSV. 
-   The Saturation and Value can be used to distinguish vehicles from the background.
+
+The Saturation and Value can be used to distinguish vehicles from the background.
    
 We can use OpenCV to average between several frames and create our background image. Now that we have a background image, or an array of default/background values, we can use OpenCV to detect when these values go above a certain value (or 'threshold value'). We assume that this occurs when there is a vehicle within that pixel, and so use OpenCV to set the pixels that meet the threshold criteria to maximum brightness.
 
