@@ -12,6 +12,10 @@ the real time traffic situation is.
 
 *Python
 *OpenCV
+## Screenclip
+
+![alt text](https://github.com/premmody312/Traffic-Density-Detection/blob/master/outputs/output.gif)
+
 
 ## APPROACH:
 
